@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Botond Branyicskai-Nagy" />
 <script type="application/ld+json">
-{"name":"Botond Branyicskai-Nagy","headline":"Botond Branyicskai-Nagy","url":"http://localhost:4000/","@type":"WebSite","author":{"@type":"Person","name":"Botond Branyicskai-Nagy"},"@context":"https://schema.org"}</script>
+{"name":"Botond Branyicskai-Nagy","url":"http://localhost:4000/","@type":"WebSite","author":{"@type":"Person","name":"Botond Branyicskai-Nagy"},"headline":"Botond Branyicskai-Nagy","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Botond Branyicskai-Nagy" /><link rel="shortcut icon" type="image/x-icon" href="" />
   <link rel="stylesheet" href="/assets/css/main.css" />
@@ -30,5 +30,27 @@
 <ul><li><a href="mailto:botond.branyicskai-nagy.23@ucl.ac.uk">email</a></li><li><a href="https://github.com/botondbnagy">github</a></li><li><a href="https://twitter.com/bbbnagy">twitter</a></li><li><a href="assets/botond_branyicskai_CV.pdf">CV</a></li><li><a href="archive">projects</a></li></ul>
       </div>
     </main>
+    <button id="theme-toggle" aria-label="Toggle dark mode" style="border: none; background: none; background-image: url('assets/moon.png'); background-size: cover; width: 40px; height: 40px; position: fixed; bottom: 20px; right: 20px; z-index: 100;"></button>
+    <script>
+      var body = document.body;
+      var button = document.getElementById('theme-toggle');
+
+      // Apply the theme on page load
+      var theme = localStorage.getItem('theme') || 'light';
+      body.setAttribute('a', theme);
+      button.style.backgroundImage = theme === 'dark' ? "url('assets/sun.png')" : "url('assets/moon.png')";
+
+      button.addEventListener('click', function() {
+        if (body.getAttribute('a') === 'dark') {
+          body.setAttribute('a', 'light');
+          button.style.backgroundImage = "url('assets/moon.png')";
+          localStorage.setItem('theme', 'light');
+        } else {
+          body.setAttribute('a', 'dark');
+          button.style.backgroundImage = "url('assets/sun.png')";
+          localStorage.setItem('theme', 'dark');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-23T16:33:13+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Botond Branyicskai-Nagy</title><author><name>Botond Branyicskai-Nagy</name></author><entry><title type="html">Bsc Thesis</title><link href="http://localhost:4000/bsc-thesis.html" rel="alternate" type="text/html" title="Bsc Thesis" /><published>2023-06-05T00:00:00+01:00</published><updated>2023-06-05T00:00:00+01:00</updated><id>http://localhost:4000/bsc-thesis</id><content type="html" xml:base="http://localhost:4000/bsc-thesis.html">&lt;h1 id=&quot;evolution-of-artificial-life-investigating-optimisation-in-gene-space&quot;&gt;Evolution of Artificial Life: Investigating Optimisation in Gene Space&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-23T18:42:30+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Botond Branyicskai-Nagy</title><author><name>Botond Branyicskai-Nagy</name></author><entry><title type="html">ML@UCL</title><link href="http://localhost:4000/ml-at-ucl.html" rel="alternate" type="text/html" title="ML@UCL" /><published>2024-03-23T00:00:00+00:00</published><updated>2024-03-23T00:00:00+00:00</updated><id>http://localhost:4000/ML-at-UCL</id><content type="html" xml:base="http://localhost:4000/ml-at-ucl.html">&lt;h2 id=&quot;projects-and-assignments-undertaken-during-my-masters&quot;&gt;Projects and assignments undertaken during my master’s:&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;COMP0086 Probabilistic and Unsupervised Learning (&lt;a href=&quot;https://www.gatsby.ucl.ac.uk/&quot;&gt;Gatsby Unit&lt;/a&gt;)
+    &lt;ul&gt;
+      &lt;li&gt;Bayesian Model Selection&lt;/li&gt;
+      &lt;li&gt;Expectation-Maximisation&lt;/li&gt;
+      &lt;li&gt;Linear Gaussian State Space Models&lt;/li&gt;
+      &lt;li&gt;Markov Chain Monte Carlo decryption&lt;/li&gt;
+      &lt;li&gt;Gibbs Sampling for Latent Dirichlet Allocation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;COMP0085 Approximate Inference and Learning in Probabilistic Models (&lt;a href=&quot;https://www.gatsby.ucl.ac.uk/&quot;&gt;Gatsby Unit&lt;/a&gt;)
+    &lt;ul&gt;
+      &lt;li&gt;Gaussian Processes&lt;/li&gt;
+      &lt;li&gt;Variational Bayes&lt;/li&gt;
+      &lt;li&gt;Expectation Propagation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;COMP0089 Reinforcement Learning (&lt;a href=&quot;https://deepmind.google&quot;&gt;DeepMind&lt;/a&gt;)
+    &lt;ul&gt;
+      &lt;li&gt;Dynamic Programming&lt;/li&gt;
+      &lt;li&gt;Monte Carlo Methods&lt;/li&gt;
+      &lt;li&gt;Temporal Difference Learning&lt;/li&gt;
+      &lt;li&gt;Function Approximation&lt;/li&gt;
+      &lt;li&gt;Policy Gradient Methods&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;COMP0168 Machine Learning Seminar
+    &lt;ul&gt;
+      &lt;li&gt;Gaussian Processes&lt;/li&gt;
+      &lt;li&gt;Bayesian Optimisation&lt;/li&gt;
+      &lt;li&gt;Modern Integration Methods&lt;/li&gt;
+      &lt;li&gt;Message Passing (Belief Propagation)&lt;/li&gt;
+      &lt;li&gt;Meta-Learning&lt;/li&gt;
+      &lt;li&gt;Paper presentation: &lt;a href=&quot;https://arxiv.org/abs/2102.03324&quot;&gt;GIBBON&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;Paper review: &lt;a href=&quot;https://arxiv.org/abs/1105.5592&quot;&gt;Kernel Belief Propagation&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;COMP0171 Bayesian Deep Learning
+    &lt;ul&gt;
+      &lt;li&gt;Variational Autoencoders&lt;/li&gt;
+      &lt;li&gt;Bayesian Neural Networks&lt;/li&gt;
+      &lt;li&gt;Deep Generative Models&lt;/li&gt;
+      &lt;li&gt;Uncertainty Estimation&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;COMP0078 Supervised Learning
+    &lt;ul&gt;
+      &lt;li&gt;Kernel Ridge Regression&lt;/li&gt;
+      &lt;li&gt;k-Nearest Neighbours&lt;/li&gt;
+      &lt;li&gt;Perceptron, Support Vector Machines&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;COMP0081 Applied Machine Learning
+    &lt;ul&gt;
+      &lt;li&gt;Decision Trees, Random Forests, Gradient Boosting&lt;/li&gt;
+      &lt;li&gt;Kernelised SVM&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;COMP0197 Applied Deep Learning
+    &lt;ul&gt;
+      &lt;li&gt;Convolutional Neural Networks&lt;/li&gt;
+      &lt;li&gt;Recurrent Neural Networks&lt;/li&gt;
+      &lt;li&gt;Generative Adversarial Networks&lt;/li&gt;
+      &lt;li&gt;Vision Transformers&lt;/li&gt;
+      &lt;li&gt;Group project: Image Segmentation using a Self-Supervised Vision Transformer Fine-Tuned on a Small Dataset&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Botond Branyicskai-Nagy</name></author><summary type="html">Projects and assignments undertaken during my master’s: COMP0086 Probabilistic and Unsupervised Learning (Gatsby Unit) Bayesian Model Selection Expectation-Maximisation Linear Gaussian State Space Models Markov Chain Monte Carlo decryption Gibbs Sampling for Latent Dirichlet Allocation</summary></entry><entry><title type="html">Bsc Thesis</title><link href="http://localhost:4000/bsc-thesis.html" rel="alternate" type="text/html" title="Bsc Thesis" /><published>2023-06-05T00:00:00+01:00</published><updated>2023-06-05T00:00:00+01:00</updated><id>http://localhost:4000/bsc-thesis</id><content type="html" xml:base="http://localhost:4000/bsc-thesis.html">&lt;h1 id=&quot;evolution-of-artificial-life-investigating-optimisation-in-gene-space&quot;&gt;Evolution of Artificial Life: Investigating Optimisation in Gene Space&lt;/h1&gt;
 &lt;p&gt;I carried out my BSc thesis under the supervision of &lt;a href=&quot;https://www.imperial.ac.uk/people/d.clements&quot;&gt;Dave Clements&lt;/a&gt; in the &lt;a href=&quot;https://www.imperial.ac.uk/astrophysics&quot;&gt;Astrophysics Group&lt;/a&gt; at Imperial College London. The project was titled &lt;em&gt;Evolution of Artificial Life: Investigating Optimisation in Gene Space&lt;/em&gt;, and my partner Thushanan and I developed a numerical agent-based (python) simulation to investigate the optimisation problem of evolution.&lt;/p&gt;
 
 &lt;p&gt;The viva slides can be found &lt;a href=&quot;assets/bsc_viva.pdf&quot;&gt;here&lt;/a&gt; and the report &lt;a href=&quot;assets/bsc_thesis_report.pdf&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;

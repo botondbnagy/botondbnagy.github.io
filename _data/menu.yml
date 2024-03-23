@@ -1,0 +1,27 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  # - title: about
+  #   url: about
+  - title: email
+    url: mailto:botond.branyicskai-nagy.23@ucl.ac.uk
+
+  - title: github
+    url: https://github.com/botondbnagy
+
+  - title: twitter
+    url: https://twitter.com/bbbnagy
+  
+  - title: CV
+    url: assets/botond_branyicskai_CV.pdf
+
+  - title: projects
+    url: archive
+
+  # - title: projects
+  #   post_list:
+  #     limit: 5
+  #     show_more: true
+  #     show_more_text: See archive...
+  #     show_more_url: archive.html

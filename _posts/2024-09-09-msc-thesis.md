@@ -1,7 +1,7 @@
 ---
 layout: post
 ---
-# Hierarchical Bayesian Program Synthesis for Neural Algorithmic Reasoning
+# Hierarchical Bayesian Program Synthesis for Neural Algorithmic Reasoning (MSc Thesis, Distinction)
 During my Machine Learning MSc at [UCL](https://www.ucl.ac.uk), I carried out my thesis work supervised by [Prof. Mirco Musolesi](https://www.mircomusolesi.org) and [Lorenz Wolf](https://lorenz-wolf.netlify.app/) in the [Machine Intelligence Lab](https://www.machineintelligencelab.ai). The project was titled *Hierarchical Bayesian Program Synthesis for Neural Algorithmic Reasoning* and aimed to develop a novel approach to program synthesis using hierarchical Bayesian inference. The thesis report can be found [here](assets/MSc_thesis.pdf).
 
 **Abstract:**

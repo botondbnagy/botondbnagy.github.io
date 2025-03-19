@@ -12,6 +12,9 @@ entries:
 
   - title: twitter
     url: https://twitter.com/bbbnagy
+
+  - title: bluesky
+    url: https://bsky.app/profile/botondbnagy.bsky.social
   
   - title: CV
     url: assets/botond_branyicskai_CV.pdf

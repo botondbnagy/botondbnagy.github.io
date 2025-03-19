@@ -27,10 +27,12 @@ body {
   color: black;
   font-family: monospace;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.6;
   margin: 0;
   min-height: 100%;
-  overflow-wrap: break-word; 
+  overflow-wrap: break-word;
+  // fill lines (not align left)
+  text-align: justify;
 }
 
 a { color: salmon;
@@ -53,7 +55,7 @@ li { margin: 0.4rem 0; }
 *:target { background: yellow; }
 
 .w {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }

@@ -35,6 +35,8 @@ body {
 
 a { color: salmon;
   text-decoration: none; 
+  &:link { color: salmon; } 
+  &:visited { color: salmon; }
   &:hover { text-decoration: underline; }
 }
 

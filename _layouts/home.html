@@ -1,12 +1,13 @@
 ---
-layout: default
+layout: scifi
 ---
-<header>
-  <h1>{{ site.title }}</h1>
-  {%-if site.theme_config.show_description-%}
-    <p>{{ site.description }}</p>
-  {%-endif-%}
-</header>
-{{ content }}
-{%-include menu_item.html collection=site.data.menu.entries-%}
-
+<div class="page-content-body">
+  <header>
+    <h1>{{ site.title }}</h1>
+    {%- if site.theme_config.show_description -%}
+      <p class="sub">{{ site.description }}</p>
+    {%- endif -%}
+  </header>
+  {{ content }}
+  {%- include menu_item.html collection=site.data.menu.entries -%}
+</div>

@@ -1,0 +1,80 @@
+---
+layout: null
+---
+<!doctype html>
+<html lang="{{ page.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      {% if page.title %}
+        {{ page.title }} · {{ site.title }}
+      {% else %}
+        {{ site.title }}
+      {% endif %}
+    </title>
+
+    {%- seo title=false -%}
+    {%- feed_meta -%}
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ '/assets/css/scifi.css' | relative_url }}" />
+    {% if page.custom_css %}
+      {% for css_file in page.custom_css %}
+        <link rel="stylesheet" href="{{ css_file | relative_url }}" />
+      {% endfor %}
+    {% endif %}
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <div class="grid"></div>
+    <div class="scanlines"></div>
+
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="{{ '/' | relative_url }}">
+          <img
+            class="brand-avatar"
+            src="{{ '/assets/profile5.png' | relative_url }}"
+            alt="{{ site.title | default: 'Botond' }} profile photo"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="brand-title">{{ site.title | default: 'Botond' }}</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="{{ '/' | relative_url }}#about">About</a>
+          <a href="{{ '/' | relative_url }}#work">Projects</a>
+          <a href="{{ '/' | relative_url }}#contact">Contact</a>
+          <a href="{{ '/assets/botond_branyicskai_CV.pdf' | relative_url }}">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell" id="top">
+      {% if page.full_bleed %}
+        {{ content }}
+      {% else %}
+        <div class="container">
+          <div class="page-wrapper{% if page.wrapper_variant %} {{ page.wrapper_variant }}{% endif %}">
+            {{ content }}
+          </div>
+        </div>
+      {% endif %}
+    </main>
+
+    <footer>
+      <div class="container">
+        <small>© {{ site.time | date: "%Y" }} {{ site.title | default: 'Botond' }} · Built with Jekyll</small>
+      </div>
+    </footer>
+  </body>
+</html>

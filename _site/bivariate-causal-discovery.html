@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+      
+        Bivariate Causal Discovery with GPLVMs · Botond Branyicskai-Nagy
+      
+    </title><!-- Begin Jekyll SEO tag v2.7.1 -->
+<meta name="generator" content="Jekyll v3.9.5" />
+<meta property="og:title" content="Bivariate Causal Discovery with GPLVMs" />
+<meta name="author" content="Botond Branyicskai-Nagy" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="During my Imperial College London research internship I investigated causal discovery in bivariate settings, comparing cross-validation against Bayesian model selection using Gaussian Process Latent Variable Models (GPLVMs). The work was supervised by Mark van der Wilk and funded through Imperial UROP, with experiments run on the department’s HPC cluster." />
+<meta property="og:description" content="During my Imperial College London research internship I investigated causal discovery in bivariate settings, comparing cross-validation against Bayesian model selection using Gaussian Process Latent Variable Models (GPLVMs). The work was supervised by Mark van der Wilk and funded through Imperial UROP, with experiments run on the department’s HPC cluster." />
+<link rel="canonical" href="http://0.0.0.0:4000/bivariate-causal-discovery.html" />
+<meta property="og:url" content="http://0.0.0.0:4000/bivariate-causal-discovery.html" />
+<meta property="og:site_name" content="Botond Branyicskai-Nagy" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-10-01T00:00:00+01:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Bivariate Causal Discovery with GPLVMs" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://0.0.0.0:4000/bivariate-causal-discovery.html"},"url":"http://0.0.0.0:4000/bivariate-causal-discovery.html","@type":"BlogPosting","description":"During my Imperial College London research internship I investigated causal discovery in bivariate settings, comparing cross-validation against Bayesian model selection using Gaussian Process Latent Variable Models (GPLVMs). The work was supervised by Mark van der Wilk and funded through Imperial UROP, with experiments run on the department’s HPC cluster.","author":{"@type":"Person","name":"Botond Branyicskai-Nagy"},"headline":"Bivariate Causal Discovery with GPLVMs","dateModified":"2023-10-01T00:00:00+01:00","datePublished":"2023-10-01T00:00:00+01:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link type="application/atom+xml" rel="alternate" href="http://0.0.0.0:4000/feed.xml" title="Botond Branyicskai-Nagy" /><link rel="shortcut icon" type="image/x-icon" href="/assets/sun.png" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/scifi.css" />
+    
+  </head>
+  <body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <div class="grid"></div>
+    <div class="scanlines"></div>
+
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="/">
+          <img
+            class="brand-avatar"
+            src="/assets/profile5.png"
+            alt="Botond Branyicskai-Nagy profile photo"
+            loading="lazy"
+            decoding="async"
+          />
+          <span class="brand-title">Botond Branyicskai-Nagy</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="/#about">About</a>
+          <a href="/#work">Projects</a>
+          <a href="/#contact">Contact</a>
+          <a href="/assets/botond_branyicskai_CV.pdf">CV</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell" id="top">
+      
+        <div class="container">
+          <div class="page-wrapper">
+            <div class="page-content-body"><a class="back-link" href="/">
+  Back to landing
+</a>
+<article>
+    <p class="page-meta">
+      <time datetime="2023-10-01 00:00:00 +0100">2023-10-01</time>
+    </p>
+    <h1>Bivariate Causal Discovery with GPLVMs</h1>
+    <p>During my Imperial College London research internship I investigated causal discovery in bivariate settings, comparing cross-validation against Bayesian model selection using Gaussian Process Latent Variable Models (GPLVMs). The work was supervised by Mark van der Wilk and funded through Imperial UROP, with experiments run on the department’s HPC cluster.</p>
+
+<ul>
+  <li>Goal: Investigated whether generalisation metrics (e.g., cross-validation) can predict causal direction in bivariate data, comparing against Bayesian Model Selection (BMS) under the ICM assumption.</li>
+  <li>Reviewed BMS approach from recent work showing marginal likelihood differences can identify causal direction (x→y vs y→x).</li>
+  <li>Implemented k-fold cross-validation to compute predictive validation scores for causal vs anti-causal models using GPLVMs.</li>
+  <li>Explored computational trade-offs: k-fold CV vs exhaustive methods on small datasets, and hyperparameter tuning challenges in highly non-convex landscapes.</li>
+  <li>Set up parallelised experiments on HPC for cause–effect pairs datasets with random-search hyperparameter optimisation:
+    <ul>
+      <li>AN CE dataset: 99% accuracy (easily identifiable; few iterations to tune GPLVM).</li>
+      <li>CE-Cha and CE-Tübingen: 50% and 54% accuracies (harder pairs; many iterations required; computationally impractical with available resources).</li>
+    </ul>
+  </li>
+  <li>Investigated infinite-data limits:
+    <ul>
+      <li>Since CV estimates generalisation error, its causal signal weakens with increasing data.</li>
+      <li>Marginal likelihood retains a strong causal preference via the ICM-induced complexity penalty.</li>
+      <li>Effects of tuning cutoff due to compute limits could not be discounted; more investigation is needed to conclude true asymptotic behaviour.</li>
+    </ul>
+  </li>
+  <li><strong>Focus</strong>: causal discovery, GPLVMs, model selection</li>
+  <li><strong>Stack</strong>: GPflow, TensorFlow, HPC, CUDA</li>
+</ul>
+
+<p><a href="https://github.com/botondbnagy/causal_gplvm">View code on GitHub</a></p>
+
+  </article>
+</div>
+
+          </div>
+        </div>
+      
+    </main>
+
+    <footer>
+      <div class="container">
+        <small>© 2025 Botond Branyicskai-Nagy · Built with Jekyll</small>
+      </div>
+    </footer>
+  </body>
+</html>

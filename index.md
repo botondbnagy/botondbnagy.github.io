@@ -1,6 +1,6 @@
 ---
-layout: scifi
-title: "Botond — Sci‑Fi"
+layout: base
+title: "Botond"
 permalink: /
 full_bleed: true
 ---

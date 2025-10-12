@@ -93,7 +93,7 @@ full_bleed: true
             <p class="timeline-meta">2024 — Present</p>
             <h3>Postgraduate Researcher</h3>
             <p class="timeline-entity">Machine Intelligence Lab · University College London</p>
-            <p class="timeline-text">Continuing research into neural program synthesis and algorithmic reasoning with Prof. Mirco Musolesi, building deep learning frameworks that blend probabilistic priors with structured computation.</p>
+            <p class="timeline-text">Research into neural program synthesis and algorithmic reasoning with Prof. Mirco Musolesi, building Transformers and wake-sleep library learning.</p>
           </div>
         </article>
         <article class="timeline-item">

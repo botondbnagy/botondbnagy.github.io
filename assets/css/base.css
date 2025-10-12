@@ -527,7 +527,7 @@ section {
 }
 
 .ghost-link::after {
-  content: "↗";
+  content: "→";
   font-size: 14px;
   color: var(--accent2);
   transition: transform 0.2s ease;

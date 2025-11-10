@@ -11,7 +11,7 @@ Self-supervised learning pipeline that pre-trains a Vision Transformer to recons
 - **Focus**: generative pre-training, segmentation, ViT fine-tuning  
 - **Stack**: PyTorch, Hugging Face
 
-![Reconstructions](https://github.com/botondbnagy/masked-image-modelling/blob/main/figures/reconstructions.png)
-![Segmentation Results](https://github.com/botondbnagy/masked-image-modelling/blob/main/figures/segmented.png)
+![Reconstructions](https://raw.githubusercontent.com/botondbnagy/masked-image-modelling/refs/heads/main/figures/reconstructions.png)
+![Segmentation Results](https://raw.githubusercontent.com/botondbnagy/masked-image-modelling/refs/heads/main/figures/segmented.png)
 
 [View code on GitHub](https://github.com/botondbnagy/masked-image-modelling)
